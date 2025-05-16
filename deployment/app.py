@@ -95,7 +95,7 @@ if st.session_state.page == "Home":
     """)
 
     #for Troubleshooting
-    #st.write("Current working directory:", os.getcwd())
+    st.write("Current working directory:", os.getcwd())
 
     img_path = os.path.join(os.path.dirname(__file__), "deployment/images/flow.png")
     st.image(img_path, use_container_width=True)
