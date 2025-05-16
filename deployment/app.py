@@ -3,9 +3,6 @@ import streamlit as st
 from utils import predict_early_risk, predict_genetic, predict_clinical
 import math
 
-model_genetic_tests = joblib.load("../models/Genetic data/Genetic.pkl")
-model_clinical_tests = joblib.load("../models/Clinical tests/Clinical tests.pkl")
-
 # --------------------------
 # Page Config
 # --------------------------
