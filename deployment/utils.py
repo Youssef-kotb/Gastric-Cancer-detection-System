@@ -7,9 +7,9 @@ pd.set_option('display.max_columns', None)
 
 def predict_early_risk(raw_input):
     # Load encoders and model
-    model = joblib.load("../models/Early screening/Early Risk Screening.pkl")
-    ohe = joblib.load("../models/Early screening/ES_ohe_Encoder.pkl")
-    scaler = joblib.load('../models/Early screening/ES_minmaxscaler.pkl')
+    model = joblib.load("models/Early screening/Early Risk Screening.pkl")
+    ohe = joblib.load("models/Early screening/ES_ohe_Encoder.pkl")
+    scaler = joblib.load('models/Early screening/ES_minmaxscaler.pkl')
 
     # Define column groups
     ES_data_num_cols = ['age']
@@ -41,9 +41,9 @@ def predict_early_risk(raw_input):
 def predict_genetic(raw_input):
 
     # Load encoders and model
-    model = joblib.load("../models/Genetic data/Genetic.pkl")
-    ohe = joblib.load("../models/Genetic data/Genetic_ohe_encoder.pkl")
-    scaler = joblib.load('../models/Genetic data/Genetic_scaler.pkl')
+    model = joblib.load("models/Genetic data/Genetic.pkl")
+    ohe = joblib.load("models/Genetic data/Genetic_ohe_encoder.pkl")
+    scaler = joblib.load('models/Genetic data/Genetic_scaler.pkl')
 
     G_data_multi_cat_cols = ['mature_mirna_acc', 'target_symbol']
 
@@ -91,8 +91,8 @@ def predict_genetic(raw_input):
 def predict_clinical(raw_input):
 
     # Load encoders and model
-    model = joblib.load("../models/Clinical tests/Clinical tests.pkl")
-    le = joblib.load("../models/Clinical tests/CT_le_encoder.pkl")
+    model = joblib.load("models/Clinical tests/Clinical tests.pkl")
+    le = joblib.load("models/Clinical tests/CT_le_encoder.pkl")
 
     raw_input = pd.DataFrame([raw_input])
 
