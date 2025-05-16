@@ -1,0 +1,13 @@
+virtual environment/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+*.so
+*.bin
+*.h5
+*.weights
+*.pth
