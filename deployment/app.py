@@ -2,6 +2,7 @@ import joblib
 import streamlit as st
 from utils import predict_early_risk, predict_genetic, predict_clinical
 import math
+import os
 
 # --------------------------
 # Page Config
@@ -92,8 +93,9 @@ if st.session_state.page == "Home":
     **3. Clinical Tests Model**  
     Uses lab data and imaging results for definitive risk evaluation in clinical settings.
     """)
-
-    st.image("images/flow.png", use_container_width=True)
+    
+    img_path = os.path.join(os.path.dirname(__file__), "images/flow.png")
+    st.image(img_path, use_container_width=True)
     st.caption("Figure 1: Our three-stage assessment workflow")
 
     st.markdown("""---""")
@@ -136,9 +138,11 @@ if st.session_state.page == "Home":
 
     left_col, center_col, right_col = st.columns([1, 2, 1])
     with left_col:
-        st.image("images/DEPI logo.webp", width=100)
+        img_path = os.path.join(os.path.dirname(__file__), "images/DEPI logo.webp")
+        st.image(img_path, use_container_width=True)
     with right_col:
-        st.image("images/MCIT.webp", width=100)
+        img_path = os.path.join(os.path.dirname(__file__), "images/MCIT.webp")
+        st.image(img_path, use_container_width=True)
 
 # --------------------------
 # MODEL SELECTION PAGE
@@ -168,7 +172,10 @@ elif st.session_state.page == "Model Selection":
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("images/healthy.webp", use_container_width=True)
+        
+        img_path = os.path.join(os.path.dirname(__file__), "images/healthy.webp")
+        st.image(img_path, use_container_width=True)
+
         st.markdown("#### 🩺 Early Screening")
         st.markdown("""
         * Age, gender, ethnicity
@@ -179,7 +186,10 @@ elif st.session_state.page == "Model Selection":
             go_to("Early Screening")
 
     with col2:
-        st.image("images/genetic.webp", use_container_width=True)
+
+        img_path = os.path.join(os.path.dirname(__file__), "images/genetic.webp")
+        st.image(img_path, use_container_width=True)
+
         st.markdown("#### 🧬 Genetic Tests")
         st.markdown("""
         * miRNA accession
@@ -190,7 +200,10 @@ elif st.session_state.page == "Model Selection":
             go_to("Genetic Tests")
 
     with col3:
-        st.image("images/doctor.webp", use_container_width=True)
+
+        img_path = os.path.join(os.path.dirname(__file__), "images/doctor.webp")
+        st.image(img_path, use_container_width=True)
+
         st.markdown("#### 🧫 Clinical Tests")
         st.markdown("""
         * H. pylori status
