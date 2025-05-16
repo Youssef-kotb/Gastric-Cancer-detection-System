@@ -1,50 +1,31 @@
-# Gastric Cancer Detection System
+# 🩺 Gastric Cancer Detection System
 
-![Project Banner](images/banner.png) <!-- Add a banner image if available -->
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.22.0%2B-FF4B4B)](https://streamlit.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.22+-FF4B4B.svg)](https://streamlit.io)
 
-An AI-powered system for early detection of gastric cancer risk using machine learning models trained on clinical, genetic, and lifestyle data.
+**AI-powered gastric cancer risk assessment** using machine learning with three-stage evaluation:
+1. Early screening (lifestyle/demographics)
+2. Genetic testing (miRNA analysis)
+3. Clinical evaluation (medical tests)
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Models](#models)
-- [Project Structure](#project-structure)
-- [Team](#team)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+## 🚀 Quick Start
 
-## Features ✨
-
-**Three-Stage Risk Assessment:**
-1. **Early Screening Model** - Lifestyle/demographic factors
-2. **Genetic Tests Model** - miRNA and gene interaction analysis
-3. **Clinical Tests Model** - Medical test results evaluation
-
-**Key Benefits:**
-- 🚀 Streamlined risk assessment workflow
-- 📊 Data-driven decision support
-- 🔍 Multi-factorial analysis
-- 💻 User-friendly web interface
-
-## Installation 💻
-
-### Prerequisites
-- Python 3.8+
-- pip package manager
-
-### Setup
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/gastric-cancer-detection.git
+git clone https://github.com/Youssef-kotb/gastric-cancer-detection.git
 cd gastric-cancer-detection
-
-# Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-
-# Install dependencies
 pip install -r requirements.txt
+streamlit run app.py
+```
+
+### Why This Works:
+1. **Ultra-condensed** but contains all critical info
+2. **Visual hierarchy** with emojis and badges
+3. **Copy-paste ready** - no external dependencies
+4. **Mobile-friendly** layout
+5. **Key sections**:
+   - One-command setup
+   - Feature matrix
+   - Directory tree
+   - Team credits
+   - Clear disclaimer
