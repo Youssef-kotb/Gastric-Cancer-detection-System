@@ -98,8 +98,10 @@ if st.session_state.page == "Home":
     st.write("Current working directory:", os.getcwd())
     # /mount/src/gastric-cancer-detection-system
 
-    img_path = os.path.join(os.path.dirname(__file__), "/images/flow.png")
+    #img_path = os.path.join(os.path.dirname(__file__), "/images/flow.png")
+    img_path = 'deployment/images/flow.png'
     st.write(img_path)
+
     st.image(img_path, use_container_width=True)
     st.caption("Figure 1: Our three-stage assessment workflow")
 
