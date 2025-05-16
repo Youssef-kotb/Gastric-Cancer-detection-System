@@ -94,7 +94,7 @@ if st.session_state.page == "Home":
     Uses lab data and imaging results for definitive risk evaluation in clinical settings.
     """)
     
-    img_path = os.path.join(os.path.dirname(__file__), "../mages/flow.png")
+    img_path = os.path.join(os.path.dirname(__file__), "../images/flow.png")
     st.image(img_path, use_container_width=True)
     st.caption("Figure 1: Our three-stage assessment workflow")
 
