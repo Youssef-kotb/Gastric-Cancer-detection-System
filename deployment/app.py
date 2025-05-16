@@ -94,7 +94,7 @@ if st.session_state.page == "Home":
     Uses lab data and imaging results for definitive risk evaluation in clinical settings.
     """)
     
-    img_path = os.path.join(os.path.dirname(__file__), "images/flow.png")
+    img_path = os.path.join(os.path.dirname(__file__), "../mages/flow.png")
     st.image(img_path, use_container_width=True)
     st.caption("Figure 1: Our three-stage assessment workflow")
 
@@ -138,10 +138,10 @@ if st.session_state.page == "Home":
 
     left_col, center_col, right_col = st.columns([1, 2, 1])
     with left_col:
-        img_path = os.path.join(os.path.dirname(__file__), "images/DEPI logo.webp")
+        img_path = os.path.join(os.path.dirname(__file__), "../images/DEPI logo.webp")
         st.image(img_path, use_container_width=True)
     with right_col:
-        img_path = os.path.join(os.path.dirname(__file__), "images/MCIT.webp")
+        img_path = os.path.join(os.path.dirname(__file__), "../images/MCIT.webp")
         st.image(img_path, use_container_width=True)
 
 # --------------------------
@@ -173,7 +173,7 @@ elif st.session_state.page == "Model Selection":
     col1, col2, col3 = st.columns(3)
     with col1:
         
-        img_path = os.path.join(os.path.dirname(__file__), "images/healthy.webp")
+        img_path = os.path.join(os.path.dirname(__file__), "../images/healthy.webp")
         st.image(img_path, use_container_width=True)
 
         st.markdown("#### 🩺 Early Screening")
@@ -187,7 +187,7 @@ elif st.session_state.page == "Model Selection":
 
     with col2:
 
-        img_path = os.path.join(os.path.dirname(__file__), "images/genetic.webp")
+        img_path = os.path.join(os.path.dirname(__file__), "../images/genetic.webp")
         st.image(img_path, use_container_width=True)
 
         st.markdown("#### 🧬 Genetic Tests")
@@ -201,7 +201,7 @@ elif st.session_state.page == "Model Selection":
 
     with col3:
 
-        img_path = os.path.join(os.path.dirname(__file__), "images/doctor.webp")
+        img_path = os.path.join(os.path.dirname(__file__), "../images/doctor.webp")
         st.image(img_path, use_container_width=True)
 
         st.markdown("#### 🧫 Clinical Tests")
